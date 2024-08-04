@@ -44,7 +44,7 @@ export default function Home() {
 
   useEffect(() => {
 
-    upadatePantry()
+    updatePantry()
 
   }, [])
 
@@ -155,6 +155,7 @@ export default function Home() {
 
         </Stack>
       </Box>
+      <CameraComponent /> {/* CameraComponent included here */}
     </Box>
   )
 }
