@@ -31,7 +31,7 @@ export default function Home() {
 
   const [itemName, setItemName] = useState('')
 
-  const upadatePantry = async () => {
+  const updatePantry = async () => {
     const snapshot = query(collection(firestore, 'Pantry'))
     const docs = await getDocs(snapshot)
     const pantryList = []
@@ -60,7 +60,7 @@ export default function Home() {
     else {
       await setDoc(docRef, {count: 1})
     }
-    await upadatePantry()
+    await updatePantry()
   }
 
   const removeItem = async (item) => {
@@ -76,7 +76,7 @@ export default function Home() {
         await setDoc(docRef, {count: count - 1})
        }
     }
-    await upadatePantry()
+    await updatePantry()
   }
   return (
     <Box
@@ -155,7 +155,7 @@ export default function Home() {
 
         </Stack>
       </Box>
-      <CameraComponent /> {/* CameraComponent included here */}
+      {/* <CameraComponent /> CameraComponent included here */}
     </Box>
   )
 }
