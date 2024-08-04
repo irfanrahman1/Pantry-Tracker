@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { collection, getDocs, query, doc, setDoc, deleteDoc, getDoc } from "firebase/firestore";
 
 import { Box, Stack, Typography, Button, Modal, TextField } from '@mui/material'
+import CameraComponent from './components/CameraComponent'; // Importing CameraComponent
 
 const style = {
   position:'absolute',
