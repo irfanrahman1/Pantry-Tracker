@@ -195,7 +195,7 @@ export default function Home() {
       <Box border={'1px solid #333'}>
         <Box width="800px" height="100px" bgcolor={'#1ca9c9'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
           <Typography variant={'h2'} color={'#333'} textAlign={'center'}>
-            Zihan er Bazaar
+            Pantry Tracker
           </Typography>
         </Box>
         <Stack width="800px" height="300px" spacing={2} overflow={'auto'}>
